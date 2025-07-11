@@ -1,3 +1,5 @@
+// https://github.com/shahaby/cs81-module6a-review
+
 // Constructor function: Creaties a playlist object
 function Playlist(name) {
   // Assign the name param to the instance
@@ -58,3 +60,7 @@ myMix.addSong("Evening Jazz");
 myMix.playFirst();
 myMix.skipSong();
 myMix.listSongs();
+
+
+// 4. Add one improvement suggestion in the form of a comment
+// Add a method to shuffle the playlist
