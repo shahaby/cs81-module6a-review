@@ -64,3 +64,19 @@ myMix.listSongs();
 
 // 4. Add one improvement suggestion in the form of a comment
 // Add a method to shuffle the playlist
+
+
+// 5. Add one new method to extend the object’s behavior
+// Object method removes a given song by title
+Playlist.prototype.removeSong = function(songTitle) {
+  const index = this.songs.indexOf(songTitle);
+  if (index !== -1) {
+    this.songs.splice(index, 1);
+    console.log(`Removed: ${songTitle}`);
+  } else {
+    console.log(`Title (${songTitle}) not found!`);
+  }
+};
+// Example usage of new method
+myMix.removeSong("Chillhop Beats");
+myMix.listSongs();
